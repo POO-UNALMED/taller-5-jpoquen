@@ -6,7 +6,6 @@ import java.util.List;
 import gestion.Zona;
 
 public class Anfibio extends Animal{
-	//private static Anfibio[] listado;
 	private static List<Anfibio> listado = new ArrayList<Anfibio> ();
 	public static int ranas;
 	public static int salamandras;
@@ -23,8 +22,6 @@ public class Anfibio extends Animal{
 	}
 	
 	public static int cantidadAnfibios() {
-		//int total = ranas + salamandras;
-		//return total;
 		return listado.size();
 	}
 	
@@ -33,14 +30,12 @@ public class Anfibio extends Animal{
 	public static Anfibio crearRana(String nombre, int edad, String genero) {
 		Anfibio nuevo = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
 		++ranas;
-		//listado.add(nuevo);
 		return nuevo;
 	}
 	
 	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
 		Anfibio nuevo = new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
 		++salamandras;
-		//listado.add(nuevo);
 		return nuevo;
 	}
 	
