@@ -21,8 +21,9 @@ public class Ave extends Animal{
 	}
 	
 	public static int cantidadAves() {
-		int total = halcones + aguilas;
-		return total;
+		//int total = halcones + aguilas;
+		//return total;
+		return listado.size();
 	}
 	
 	public String movimiento() { return "volar"; }

@@ -22,8 +22,9 @@ public class Reptil extends Animal{
 	}
 	
 	public static int cantidadReptiles() {
-		int total = iguanas + serpientes;
-		return total;
+		//int total = iguanas + serpientes;
+		//return total;
+		return listado.size();
 	}
 	
 	public String movimiento() { return "reptar"; }

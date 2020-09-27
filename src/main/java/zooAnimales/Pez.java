@@ -22,8 +22,9 @@ public class Pez extends Animal{
 	}
 	
 	public static int cantidadPeces() {
-		int total = salmones + bacalaos;
-		return total;
+		//int total = salmones + bacalaos;
+		//return total;
+		return listado.size();
 	}
 	
 	public String movimiento() { return "nadar"; }
