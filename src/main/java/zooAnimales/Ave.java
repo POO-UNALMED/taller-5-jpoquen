@@ -1,10 +1,14 @@
 package zooAnimales;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import gestion.Zona;
 
 public class Ave extends Animal{
 
-	private static Ave[] listado;
+	//private static Ave[] listado;
+	private static List<Ave> listado = new ArrayList<Ave> ();
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
@@ -26,14 +30,14 @@ public class Ave extends Animal{
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		Ave nuevo = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 		++halcones;
-		listado[listado.length] = nuevo;
+		listado.add(nuevo);
 		return nuevo;
 	}
 	
 	public static Ave crearAguila(String nombre, int edad, String genero) {
 		Ave nuevo = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
 		++aguilas;
-		listado[listado.length] = nuevo;
+		listado.add(nuevo);
 		return nuevo;
 	}
 	
