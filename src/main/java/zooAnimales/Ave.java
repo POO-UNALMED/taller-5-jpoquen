@@ -18,6 +18,7 @@ public class Ave extends Animal{
 	public Ave (String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		super(nombre, edad, habitat, genero);
 		this.colorPlumas = colorPlumas;
+		listado.add(this);
 	}
 	
 	public static int cantidadAves() {
@@ -31,14 +32,14 @@ public class Ave extends Animal{
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		Ave nuevo = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 		++halcones;
-		listado.add(nuevo);
+		//listado.add(nuevo);
 		return nuevo;
 	}
 	
 	public static Ave crearAguila(String nombre, int edad, String genero) {
 		Ave nuevo = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
 		++aguilas;
-		listado.add(nuevo);
+		//listado.add(nuevo);
 		return nuevo;
 	}
 	
