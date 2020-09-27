@@ -1,7 +1,5 @@
 package zooAnimales;
 
-import gestion.Zona;
-
 public class Mamifero extends Animal {
 	static Mamifero[] listado;
 	public static int caballos;
@@ -24,14 +22,14 @@ public class Mamifero extends Animal {
 	
 	public static Mamifero crearCaballo(String nombre, int edad, String genero){
 		Mamifero nuevo = new Mamifero(nombre, edad, "pradera", genero, true, 4);
-		++caballos;
+		caballos++;
 		listado[listado.length] = nuevo;
 		return nuevo;
 	}
 	
 	public static Mamifero crearLeon(String nombre, int edad, String genero) {
 		Mamifero nuevo = new Mamifero(nombre, edad, "selva", genero, true, 4);
-		++leones;
+		leones++;
 		listado[listado.length] = nuevo;
 		return nuevo;
 	}
