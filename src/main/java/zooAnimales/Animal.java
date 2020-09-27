@@ -27,12 +27,12 @@ public class Animal {
 				"\nAves: " + Ave.cantidadAves() + 
 				"\nReptiles: " + Reptil.cantidadReptiles() +
 				"\nPreces: " + Pez.cantidadPeces() +
-				"\nanfibios: " + Anfibio.cantidadAnfibios();
+				"\nAnfibios: " + Anfibio.cantidadAnfibios();
 	}
 	
 	public String toString() {
 		return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + ", y mi genero es " + genero + 
-				", la zona en la que me ubico es " + zona + ", en el ";
+				", la zona en la que me ubico es " + zona + ", en el " ;
 	}
 	
 	public void setNombre(String nombre) {
