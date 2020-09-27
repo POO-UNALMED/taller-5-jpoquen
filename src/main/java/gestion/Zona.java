@@ -8,7 +8,7 @@ public class Zona {
 	private String nombre;
 	private Zoologico zoo;
 	//private Animal[] animales;
-	private static List<Animal> animales = new ArrayList<Animal> ();
+	private List<Animal> animales = new ArrayList<Animal> ();
 	
 	public Zona(){}
 	
