@@ -1,7 +1,11 @@
 package zooAnimales;
+import java.util.*;
+
+import gestion.Zona;
 
 public class Mamifero extends Animal {
-	static Mamifero[] listado;
+	//static Mamifero[] listado;
+	private static List<Mamifero> listado = new ArrayList<Mamifero> ();
 	public static int caballos;
 	public static int leones;
 	private boolean pelaje;
@@ -28,14 +32,14 @@ public class Mamifero extends Animal {
 	public static Mamifero crearCaballo(String nombre, int edad, String genero){
 		Mamifero nuevo = new Mamifero(nombre, edad, "pradera", genero, true, 4);
 		++caballos;
-		listado[listado.length] = nuevo;
+		listado.add(nuevo);
 		return nuevo;
 	}
 	
 	public static Mamifero crearLeon(String nombre, int edad, String genero) {
 		Mamifero nuevo = new Mamifero(nombre, edad, "selva", genero, true, 4);
 		++leones;
-		listado[listado.length] = nuevo;
+		listado.add(nuevo);;
 		return nuevo;
 	}
 	
